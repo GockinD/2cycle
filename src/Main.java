@@ -68,14 +68,11 @@ public class Main {
         }
         System.out.println();
         System.out.println("Задача 7");
-        int firstFriday = 1;
-        int dayNumber = 1;
+        int friday = 4;
         int dayInMonth = 31;
-        while (dayNumber <= dayInMonth) {
-            if (dayNumber == firstFriday || ((dayNumber - firstFriday) % 7 == 0)) {
-                System.out.println("Сегодня пятница,"+ dayNumber + "-е число. Необходимо подготовить отчет");
-            }
-            dayNumber = dayNumber + 1;
+        while (friday <= dayInMonth) {
+            System.out.println("Сегодня пятница,"+ friday + "-е число. Необходимо подготовить отчет");
+            friday = friday + 7;
         }
         System.out.println();
         System.out.println("Задача 8");
